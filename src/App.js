@@ -11,14 +11,17 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <Routes>
-        <Route path='/' element={<Home />}></Route>
-        <Route path='/about' element={<About/>} />
-        <Route path='/stock/:name/:symbol/:lastPrice/:change' element={<Stock />} />
-        <Route path='/stocks' element={<Dashboard/>} />
+      <div className='stockContainer'>
+        <Routes>
+          <Route path='/' element={<Home />}></Route>
+          <Route path='/about' element={<About/>} />
+          {/* <Route path='/stock/:symbol/' element={<Stock />} /> */}
+          <Route path='/stock/:name/:symbol/:lastPrice/:change' element={<Stock />} />
+          <Route path='/stocks' element={<Dashboard/>} />
 
-        <Route path='*' element={<Navigate to='/'/>}/>
-      </Routes>
+          <Route path='*' element={<Navigate to='/'/>}/>
+        </Routes>
+      </div>
      
     </div>
   );
