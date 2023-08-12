@@ -4,14 +4,30 @@
 
 .home {
   display: flex;
-  flex-direction: column;
-  width: 300vmin;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 10px;
+  /* margin-left: 100px; */
+  gap: 60px;
+    
 }
+
+.image {
+  width: 500px; 
+
+}
+
+.paragraph {
+  font-size: 40px;
+}
+
 
 .stockContainer{
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  
 }
 
 .App-logo {

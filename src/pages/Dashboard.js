@@ -15,23 +15,25 @@ export default function Dashboard(props) {
     return (
         <div>
             {stocks.map((stock) => {
-                const {name, symbol, lastPrice, change} = stock;
-                // const [...item] = stock;
+                const {name, symbol, price, change} = stock;
+               
                 return (
-                    <Link to={`/stock/${name}/${symbol}/${lastPrice}/${change}`}>
+                    
+                    // <Link to={`/stock/${name}/${symbol}/${lastPrice}/${change}`}>
+                    <Link to={`/stock/${symbol}`}>
                         <h5>{name} </h5>
                         {/* <Stock {...stock}/> */}
                         {/* <div>
                             <div className={Styles.companies}>
                                 <h5>Company Name {name} </h5>
                             </div>
-                            {/* <div className={Styles.price}>
-                                <h5>Price {lastPrice}</h5>
+                            <div className={Styles.price}>
+                                <h5>Price {price}</h5>
                             </div>
                             <div className={Styles.change}>
                                 <h5>Change {change}</h5>
-                            </div> */}
-                        {/* </div> */} 
+                            </div>
+                        </div> */}
                     </Link>
                 );
             

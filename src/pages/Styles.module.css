@@ -1,14 +1,14 @@
 
 .stock {
     display: flex;
-    flex-direction: column;    
-  
+    flex-direction: column;   
     width: 250px;
     background-color: #f2f2f2;
     border-radius: 8px;
     padding: 16px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     gap: 8px;
+   
   }
   
   /* Styles for the header section */
